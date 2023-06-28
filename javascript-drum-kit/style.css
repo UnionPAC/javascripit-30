@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/rock-concert-bg.jpg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color: white;
+}
