@@ -8,55 +8,57 @@
     <title>JavaScript Drum Kit</title>
   </head>
   <body>
+    <!-- The <kbd> HTML element represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. -->
+
     <div class="keys">
-      <div class="key" data-key="65">
-        <p>A</p>
-        <span>Clap</span>
+      <div class="key" data-key="KeyA">
+        <kbd>A</kbd>
+        <span class="sound">Clap</span>
       </div>
-      <div class="key" data-key="83">
-        <p>S</p>
-        <span>HiHat</span>
+      <div class="key" data-key="KeyS">
+        <kbd>S</kbd>
+        <span class="sound">HiHat</span>
       </div>
-      <div class="key" data-key="68">
-        <p>D</p>
-        <span>Kick</span>
+      <div class="key" data-key="KeyD">
+        <kbd>D</kbd>
+        <span class="sound">Kick</span>
       </div>
-      <div class="key" data-key="70">
-        <p>F</p>
-        <span>OpenHat</span>
+      <div class="key" data-key="KeyF">
+        <kbd>F</kbd>
+        <span class="sound">OpenHat</span>
       </div>
-      <div class="key" data-key="71">
-        <p>G</p>
-        <span>Boom</span>
+      <div class="key" data-key="KeyG">
+        <kbd>G</kbd>
+        <span class="sound">Boom</span>
       </div>
-      <div class="key" data-key="72">
-        <p>H</p>
-        <span>Ride</span>
+      <div class="key" data-key="KeyH">
+        <kbd>H</kbd>
+        <span class="sound">Ride</span>
       </div>
-      <div class="key" data-key="74">
-        <p>J</p>
-        <span>Snare</span>
+      <div class="key" data-key="KeyJ">
+        <kbd>J</kbd>
+        <span class="sound">Snare</span>
       </div>
-      <div class="key" data-key="75">
-        <p>K</p>
-        <span>Tom</span>
+      <div class="key" data-key="KeyK">
+        <kbd>K</kbd>
+        <span class="sound">Tom</span>
       </div>
-      <div class="key" data-key="76">
-        <p>L</p>
-        <span>Tink</span>
+      <div class="key" data-key="KeyL">
+        <kbd>L</kbd>
+        <span class="sound">Tink</span>
       </div>
     </div>
 
     <!-- Audio Files -->
-    <audio src="audio/boom.wav"></audio>
-    <audio src="audio/clap.wav"></audio>
-    <audio src="audio/hihat.wav"></audio>
-    <audio src="audio/kick.wav"></audio>
-    <audio src="audio/openhat.wav"></audio>
-    <audio src="audio/ride.wav"></audio>
-    <audio src="audio/snare.wav"></audio>
-    <audio src="audio/tink.wav"></audio>
-    <audio src="audio/tom.wav"></audio>
+    <audio data-key="KeyG" src="audio/boom.wav"></audio>
+    <audio data-key="KeyA" src="audio/clap.wav"></audio>
+    <audio data-key="KeyS" src="audio/hihat.wav"></audio>
+    <audio data-key="KeyD" src="audio/kick.wav"></audio>
+    <audio data-key="KeyF" src="audio/openhat.wav"></audio>
+    <audio data-key="KeyH" src="audio/ride.wav"></audio>
+    <audio data-key="KeyJ" src="audio/snare.wav"></audio>
+    <audio data-key="KeyK" src="audio/tink.wav"></audio>
+    <audio data-key="KeyL" src="audio/tom.wav"></audio>
 
     <script src="main.js"></script>
   </body>

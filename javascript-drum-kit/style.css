@@ -11,7 +11,71 @@ img {
 body {
   margin: 0;
   padding: 0;
-  background-image: url("img/rock-concert-bg.jpg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("marek-piwnicki-epdbc0xRjiI-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+kbd {
+  font-size: 2rem;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  padding: 0 1em;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
+  border: 0.2rem solid black;
+  border-radius: 0.5rem;
+  padding: 0.7em;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+  transition: all 0.1s ease;
+}
+
+.sound {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: hsl(47, 100%, 50%);
+  margin-top: 0.4em;
+}
+
+/* Add dynamically to element which is playing - animation */
+.playing {
+  transform: scale(1.1);
+  border-color: hsl(47, 100%, 50%);
+  box-shadow: 0 0 1rem hsl(47, 100%, 50%);
+}
+
+@media (min-width: 600px) {
+  kbd {
+    font-size: 4rem;
+  }
+
+  .keys {
+    gap: 20px;
+  }
+
+  .key {
+    padding: 1em 2em;
+  }
+
+  .sound {
+    font-size: 0.9rem;
+  }
 }
