@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Montserrat:wght@600;800&display=swap");
+
+:root {
+  --accent: hsl(120, 73%, 75%);
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Hind", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  padding: var(--spacing);
+  background-color: var(--accent);
+  filter: blur(var(--blur));
+}
+
+label {
+  font-weight: 400;
+}
+
+input {
+  margin: 1em 0 1.5em 0;
+}
+
+input[type="color"] {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.container {
+  padding: 0 2em;
+  text-align: center;
+}
+
+.highlight {
+  color: var(--accent);
+}
+
+.title {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 400px;
+}

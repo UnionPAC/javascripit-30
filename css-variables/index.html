@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://fav.farm/👾" />
+    <title>CSS Variables</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">
+        Update CSS Variables with <span class="highlight">JS</span>
+      </h1>
+      <div class="controls">
+        <label for="spacing">Spacing</label>
+        <!-- note: min & max refer to the input range -->
+        <input
+          type="range"
+          id="spacing"
+          name="spacing"
+          min="10"
+          max="200"
+          value="10"
+          data-sizing="px"
+        />
+
+        <label for="blur">Blur</label>
+        <input
+          type="range"
+          id="blur"
+          name="blur"
+          min="0"
+          max="25"
+          value="10"
+          data-sizing="px"
+        />
+
+        <label for="bg-color">Accent Color</label>
+        <input
+          type="color"
+          id="accent"
+          name="accent"
+          value="#90ee90"
+        />
+      </div>
+
+      <img src="resource-database-3PDEp-zpcSI-unsplash.jpg" width="400" />
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
